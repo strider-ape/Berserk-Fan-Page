@@ -1,142 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&family=Staatliches&display=swap");
 
 body {
-    background: black;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+  background: black;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    justify-content: space-around;
-    background-color: #CC1817;
-    align-items: center;
-    color: azure;
-    font-family: "Staatliches", sans-serif;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 100;
-    box-shadow: 0 2px 8px #000;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: space-around;
+  background-color: #cc1817;
+  align-items: center;
+  color: azure;
+  font-family: "Staatliches", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  box-shadow: 0 2px 8px #000;
 }
 
 .brand {
-    width: 7%;
-    height: auto;
-    background-color: black;
+  width: 7%;
+  height: auto;
+  background-color: black;
 }
 
 .items {
-    font-size: 22px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    transition: font-size 0.3s, background 0.3s;
-    font-family: "Staatliches", sans-serif;
+  font-size: 22px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: font-size 0.3s, background 0.3s;
+  font-family: "Staatliches", sans-serif;
 }
 
 .items:hover {
-    font-size: 28px;
-    color: black;
+  font-size: 28px;
+  color: black;
 }
 
 .main-flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin-top: 60px;
-    gap: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 60px;
+  gap: 60px;
 }
 
 .form-side {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
 }
 
 .form-heading {
-    font-family: 'Staatliches', 'Impact', 'Arial Black', sans-serif;
-    color: #fff;
-    font-size: 50px;
-    letter-spacing: 2px;
-    text-align: left;
-    margin-bottom: 28px;
-    text-shadow: 2px 2px 8px #000;
-    max-width: 370px;
+  font-family: "Staatliches", "Impact", "Arial Black", sans-serif;
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-bottom: 28px;
+  text-shadow: 2px 2px 8px #000;
+  max-width: 370px;
 }
 
 .form-box {
-    background: #CC1817;
-    border-radius: 16px;
-    padding: 40px 32px 32px 32px;
-    box-shadow: 0 4px 24px #000c;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 370px;
+  background: #cc1817;
+  border-radius: 16px;
+  padding: 40px 32px 32px 32px;
+  box-shadow: 0 4px 24px #000c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
 }
 
 .headings {
-    font-size: 24px;
-    color: #fff;
-    font-family: "Staatliches", cursive;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-    text-align: left;
-    width: 100%;
+  font-size: 24px;
+  color: #fff;
+  font-family: "Staatliches", cursive;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-align: left;
+  width: 100%;
 }
 
 .boxess {
-    background: #222;
-    color: #fff;
-    border: 2px solid #000;
-    border-radius: 8px;
-    font-size: 20px;
-    font-family: "Staatliches", cursive;
-    padding: 10px 16px;
-    margin-bottom: 24px;
-    width: 100%;
-    transition: border 0.2s;
+  background: #222;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: "Staatliches", cursive;
+  padding: 10px 16px;
+  margin-bottom: 24px;
+  width: 100%;
+  transition: border 0.2s;
 }
 
 .boxess:focus {
-    outline: none;
-    border: 2px solid #fff;
+  outline: none;
+  border: 2px solid #fff;
 }
 
 .submit-btn {
-    width: 100%;
-    padding: 14px 0;
-    background: white;
-    color: black;
-    font-family: 'Staatliches', 'Impact', 'Arial Black', sans-serif;
-    font-size: 1.4em;
-    border: none;
-    border-radius: 8px;
-    margin-top: 10px;
-    transition: 0.2s;
+  width: 100%;
+  padding: 14px 0;
+  background: white;
+  color: black;
+  font-family: "Staatliches", "Impact", "Arial Black", sans-serif;
+  font-size: 1.4em;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: 0.2s;
 }
 .submit-btn:hover {
-    color: #CC1817;
+  color: #cc1817;
 }
 
 .image-side {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .skull-img {
-    width: 100%;
-    border-radius: 18px;
-    margin-left: 0;
+  width: 100%;
+  border-radius: 18px;
+  margin-left: 0;
+}
+
+.full-image {
+  height: auto;
+  width: auto;
 }
