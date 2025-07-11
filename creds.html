@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Berserk</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./assets/Berserk-Logo.png">
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+    <script>
+        function validatePassword() {
+            var passw=  /^[A-Za-z0-9-_.@#$^*+]{8,14}$/;
+            
+            var password = document.getElementById('password').value;
+            var result = passw.test(password);
+            if (!result) {
+                alert('Password must be at least 8 characters long ');
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <nav class="container">
+        <img class="brand" src="./assets/Berserk-Logo.png" alt="BERSERK Logo"/> 
+        <a class="items" href="index.html">Index</a>
+        <a class="items" href="index.html#lore">The Lore</a>
+        <a class="items" href="index.html#archive">Archive</a>
+        <a class="items" href="index.html#characrters">Characters</a>
+        <a class="items" href="index.html#end">End</a>
+    </nav>
+    <div class="main-flex">
+        <div class="form-side">
+            <form class="form-box" onsubmit="return validatePassword()" method="post" action="success.html">
+                <label class="headings" for="username">Username</label>
+                <input type="text" id="username" name="user" class="boxess" required>
+                <label class="headings" for="password">Password</label>
+                <input type="text" id="password" name="pass" class="boxess" required>
+                <button type="submit" class="submit-btn" >Enter the Realm</button>
+            </form>
+        </div>
+        <div class="image-side">
+            <img class="skull-img" src="./assets/skull-knight-5120x2880-13628.jpg" alt="Skull Knight">
+        </div>
+    </div>
+</body>
+</html>
